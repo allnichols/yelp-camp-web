@@ -11,6 +11,9 @@ $base-line-height: 1.5;
 
 // Spacing
 $base-spacing-unit: 8px;
+$base-spacing-unit-half: $base-spacing-unit / 2;
+$base-spacing-unit-quarter: $base-spacing-unit / 4;
+$base-spacing-unit-double: $base-spacing-unit * 2;
 
 // Border
-$border-radius: 4px;
+$border-radius: 0.375rem;

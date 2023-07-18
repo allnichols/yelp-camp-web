@@ -1,0 +1,29 @@
+@import "@/styles/variables.scss";
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+
+    .buttonContainer{
+        display: flex;
+        align-items: center;
+        gap: $base-spacing-unit-double;
+
+        .registerBtn {
+            background-color: $success-color;
+            color: white;
+            border: none;
+            border-radius: $border-radius;
+            padding: $base-spacing-unit;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: lighten($success-color, 10%);
+            }
+        }
+
+    }
+
+
+
+}

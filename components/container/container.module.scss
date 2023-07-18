@@ -1,0 +1,7 @@
+@import "@/styles/variables.scss";
+
+.container {
+  max-width: 1500px;
+  margin-inline: auto;
+  padding: $base-spacing-unit-double;
+}
