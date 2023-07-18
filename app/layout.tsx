@@ -17,9 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
       <body className={inter.className}>
-        <MainHeader />
+      <span id="intercom-viewport-meta"></span>
+        
         {children}
       </body>
     </html>

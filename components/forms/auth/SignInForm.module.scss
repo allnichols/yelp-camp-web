@@ -1,0 +1,60 @@
+@import "@/styles/variables.scss";
+
+.form_container {
+    width: 100%;
+    max-width: 400px;
+    margin-inline: auto;
+    padding: $base-spacing-unit-double;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    h1 {
+        text-align: center;
+        font-size: $base-font-size * 2;
+        line-height: $base-line-height;
+        margin-bottom: $base-spacing-unit-double;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: $base-spacing-unit-double;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: $base-spacing-unit-half;
+        }
+
+        input {
+            padding: $base-spacing-unit;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
+        }
+
+        button {
+            background-color: $success-color;
+            color: white;
+            border: none;
+            border-radius: $border-radius;
+            padding: $base-spacing-unit;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: lighten($success-color, 10%);
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        margin-top: $base-spacing-unit-double;
+    }
+
+}
