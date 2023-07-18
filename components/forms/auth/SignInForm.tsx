@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react";
-import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "./SignInForm.module.scss";
@@ -14,13 +13,9 @@ export default function SignInForm() {
         const data = new FormData(event.currentTarget);
 
         try {
-            const signin = await signIn("credentials", {
-                redirect: false,
-                email: data.get("email") as string,
-                password: data.get("password") as string,
-            });
 
-            console.log('client', signin);
+
+            console.log('client', data.get('email'), data.get('password'));
         } catch (error) {
             console.error("An unexpected error", error);
         }
@@ -49,6 +44,12 @@ export default function SignInForm() {
         </div>
 
     );
+}
 
-
+export async function getServerSideProps(context: any) {
+    return {
+        props: {
+            // props for your component
+        },
+    };
 }

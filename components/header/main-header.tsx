@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link";
 import styles from './main-header.module.scss';
 import Container from "../container/container";
+
 export default function MainHeader() {
     return (
         <Container>
@@ -25,6 +27,7 @@ export default function MainHeader() {
                     </ul> */}
                 </nav>
                 <div className={styles.buttonContainer}>
+                    
                     <Link href="/auth/signin">
                         Sign In
                     </Link>
